@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DeleteScheduledResponse', 'model/ErrorDetails', 'model/IncomingMessageResponse', 'model/MessageStatusResponse', 'model/MessageStatusResponse1', 'model/NewMessageDetails', 'model/NewMessageResponse', 'model/OptoutMessageResponse'], factory);
+    define(['ApiClient', 'model/DeleteScheduledResponse', 'model/ErrorDetails', 'model/IncomingMessageResponse', 'model/MessageStatusResponse', 'model/NewMessageDetails', 'model/NewMessageResponse', 'model/OptoutMessageResponse', 'model/ScheduledMessageResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/DeleteScheduledResponse'), require('../model/ErrorDetails'), require('../model/IncomingMessageResponse'), require('../model/MessageStatusResponse'), require('../model/MessageStatusResponse1'), require('../model/NewMessageDetails'), require('../model/NewMessageResponse'), require('../model/OptoutMessageResponse'));
+    module.exports = factory(require('../ApiClient'), require('../model/DeleteScheduledResponse'), require('../model/ErrorDetails'), require('../model/IncomingMessageResponse'), require('../model/MessageStatusResponse'), require('../model/NewMessageDetails'), require('../model/NewMessageResponse'), require('../model/OptoutMessageResponse'), require('../model/ScheduledMessageResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.Winsms) {
       root.Winsms = {};
     }
-    root.Winsms.SmsApi = factory(root.Winsms.ApiClient, root.Winsms.DeleteScheduledResponse, root.Winsms.ErrorDetails, root.Winsms.IncomingMessageResponse, root.Winsms.MessageStatusResponse, root.Winsms.MessageStatusResponse1, root.Winsms.NewMessageDetails, root.Winsms.NewMessageResponse, root.Winsms.OptoutMessageResponse);
+    root.Winsms.SmsApi = factory(root.Winsms.ApiClient, root.Winsms.DeleteScheduledResponse, root.Winsms.ErrorDetails, root.Winsms.IncomingMessageResponse, root.Winsms.MessageStatusResponse, root.Winsms.NewMessageDetails, root.Winsms.NewMessageResponse, root.Winsms.OptoutMessageResponse, root.Winsms.ScheduledMessageResponse);
   }
-}(this, function(ApiClient, DeleteScheduledResponse, ErrorDetails, IncomingMessageResponse, MessageStatusResponse, MessageStatusResponse1, NewMessageDetails, NewMessageResponse, OptoutMessageResponse) {
+}(this, function(ApiClient, DeleteScheduledResponse, ErrorDetails, IncomingMessageResponse, MessageStatusResponse, NewMessageDetails, NewMessageResponse, OptoutMessageResponse, ScheduledMessageResponse) {
   'use strict';
 
   /**
@@ -187,7 +187,7 @@
      * Callback function to receive the result of the getScheduledMessages operation.
      * @callback module:api/SmsApi~getScheduledMessagesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/MessageStatusResponse1} data The data returned by the service call.
+     * @param {module:model/ScheduledMessageResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -198,7 +198,7 @@
      * @param {Number} opts.offset ***Optional*** - The number of items to skip before starting to return results. Default 0. Minimum 0.  (default to 0)
      * @param {Number} opts.limit ***Optional*** - The number of items to return. Default 100. Minimum 1. Maximum 1000.  (default to 100)
      * @param {module:api/SmsApi~getScheduledMessagesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/MessageStatusResponse1}
+     * data is of type: {@link module:model/ScheduledMessageResponse}
      */
     this.getScheduledMessages = function(opts, callback) {
       opts = opts || {};
@@ -221,7 +221,7 @@
       var authNames = ['APIKeyHeader'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = MessageStatusResponse1;
+      var returnType = ScheduledMessageResponse;
 
       return this.apiClient.callApi(
         '/sms/scheduled', 'GET',

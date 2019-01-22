@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CreditBalanceResponse', 'model/CreditTransferDetails', 'model/CreditTransferResponse', 'model/DeleteScheduledResponse', 'model/DeletedMessageStatus', 'model/ErrorDetails', 'model/IncomingMessage', 'model/IncomingMessageResponse', 'model/IncomingOptoutMessage', 'model/MessageRecipientDetails', 'model/MessageRecipientResponse', 'model/MessageStatus', 'model/MessageStatusResponse', 'model/MessageStatusResponse1', 'model/NewMessageDetails', 'model/NewMessageResponse', 'model/OptoutMessageResponse', 'model/ScheduledMessage', 'model/ShortcodeMessage', 'model/ShortcodeMessageResponse', 'model/SubAccount', 'model/SubAccountsResponse', 'api/CreditsApi', 'api/ShortcodeApi', 'api/SmsApi', 'api/SubaccountsApi'], factory);
+    define(['ApiClient', 'model/CreditBalanceResponse', 'model/CreditTransferDetails', 'model/CreditTransferResponse', 'model/DeleteScheduledResponse', 'model/DeletedMessageStatus', 'model/ErrorDetails', 'model/IncomingMessage', 'model/IncomingMessageResponse', 'model/IncomingOptoutMessage', 'model/MessageRecipientDetails', 'model/MessageRecipientResponse', 'model/MessageStatus', 'model/MessageStatusResponse', 'model/NewMessageDetails', 'model/NewMessageResponse', 'model/OptoutMessageResponse', 'model/ScheduledMessage', 'model/ScheduledMessageResponse', 'model/ShortcodeMessage', 'model/ShortcodeMessageResponse', 'model/SubAccount', 'model/SubAccountsResponse', 'api/CreditsApi', 'api/ShortcodeApi', 'api/SmsApi', 'api/SubaccountsApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/CreditBalanceResponse'), require('./model/CreditTransferDetails'), require('./model/CreditTransferResponse'), require('./model/DeleteScheduledResponse'), require('./model/DeletedMessageStatus'), require('./model/ErrorDetails'), require('./model/IncomingMessage'), require('./model/IncomingMessageResponse'), require('./model/IncomingOptoutMessage'), require('./model/MessageRecipientDetails'), require('./model/MessageRecipientResponse'), require('./model/MessageStatus'), require('./model/MessageStatusResponse'), require('./model/MessageStatusResponse1'), require('./model/NewMessageDetails'), require('./model/NewMessageResponse'), require('./model/OptoutMessageResponse'), require('./model/ScheduledMessage'), require('./model/ShortcodeMessage'), require('./model/ShortcodeMessageResponse'), require('./model/SubAccount'), require('./model/SubAccountsResponse'), require('./api/CreditsApi'), require('./api/ShortcodeApi'), require('./api/SmsApi'), require('./api/SubaccountsApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/CreditBalanceResponse'), require('./model/CreditTransferDetails'), require('./model/CreditTransferResponse'), require('./model/DeleteScheduledResponse'), require('./model/DeletedMessageStatus'), require('./model/ErrorDetails'), require('./model/IncomingMessage'), require('./model/IncomingMessageResponse'), require('./model/IncomingOptoutMessage'), require('./model/MessageRecipientDetails'), require('./model/MessageRecipientResponse'), require('./model/MessageStatus'), require('./model/MessageStatusResponse'), require('./model/NewMessageDetails'), require('./model/NewMessageResponse'), require('./model/OptoutMessageResponse'), require('./model/ScheduledMessage'), require('./model/ScheduledMessageResponse'), require('./model/ShortcodeMessage'), require('./model/ShortcodeMessageResponse'), require('./model/SubAccount'), require('./model/SubAccountsResponse'), require('./api/CreditsApi'), require('./api/ShortcodeApi'), require('./api/SmsApi'), require('./api/SubaccountsApi'));
   }
-}(function(ApiClient, CreditBalanceResponse, CreditTransferDetails, CreditTransferResponse, DeleteScheduledResponse, DeletedMessageStatus, ErrorDetails, IncomingMessage, IncomingMessageResponse, IncomingOptoutMessage, MessageRecipientDetails, MessageRecipientResponse, MessageStatus, MessageStatusResponse, MessageStatusResponse1, NewMessageDetails, NewMessageResponse, OptoutMessageResponse, ScheduledMessage, ShortcodeMessage, ShortcodeMessageResponse, SubAccount, SubAccountsResponse, CreditsApi, ShortcodeApi, SmsApi, SubaccountsApi) {
+}(function(ApiClient, CreditBalanceResponse, CreditTransferDetails, CreditTransferResponse, DeleteScheduledResponse, DeletedMessageStatus, ErrorDetails, IncomingMessage, IncomingMessageResponse, IncomingOptoutMessage, MessageRecipientDetails, MessageRecipientResponse, MessageStatus, MessageStatusResponse, NewMessageDetails, NewMessageResponse, OptoutMessageResponse, ScheduledMessage, ScheduledMessageResponse, ShortcodeMessage, ShortcodeMessageResponse, SubAccount, SubAccountsResponse, CreditsApi, ShortcodeApi, SmsApi, SubaccountsApi) {
   'use strict';
 
   /**
@@ -128,11 +128,6 @@
      */
     MessageStatusResponse: MessageStatusResponse,
     /**
-     * The MessageStatusResponse1 model constructor.
-     * @property {module:model/MessageStatusResponse1}
-     */
-    MessageStatusResponse1: MessageStatusResponse1,
-    /**
      * The NewMessageDetails model constructor.
      * @property {module:model/NewMessageDetails}
      */
@@ -152,6 +147,11 @@
      * @property {module:model/ScheduledMessage}
      */
     ScheduledMessage: ScheduledMessage,
+    /**
+     * The ScheduledMessageResponse model constructor.
+     * @property {module:model/ScheduledMessageResponse}
+     */
+    ScheduledMessageResponse: ScheduledMessageResponse,
     /**
      * The ShortcodeMessage model constructor.
      * @property {module:model/ShortcodeMessage}
