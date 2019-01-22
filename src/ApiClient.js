@@ -535,8 +535,10 @@
           // generic object, return directly
           return data;
         } else if (typeof type === 'function') {
-          // for model type like: User
-          return type.constructFromObject(data);
+          // for model type like: User          
+          //IW - 22/02/2019
+          //return type.constructFromObject(data);
+          return data;
         } else if (Array.isArray(type)) {
           // for array type like: ['String']
           var itemType = type[0];
