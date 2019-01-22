@@ -1,8 +1,4 @@
-# winsms
-
-WinSMS - JavaScript Client
-
-WinSMS RESTful API
+# WinSMS - JavaScript Client
 
 - API version: 1.0.0
 - Package version: 1.0.0
