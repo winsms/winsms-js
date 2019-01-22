@@ -170,7 +170,7 @@ This endpoint does not need any parameter.
 
 <a name="getScheduledMessages"></a>
 # **getScheduledMessages**
-> MessageStatusResponse1 getScheduledMessages(opts)
+> ScheduledMessageResponse getScheduledMessages(opts)
 
 Get a list of scheduled SMS messages
 
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MessageStatusResponse1**](MessageStatusResponse1.md)
+[**ScheduledMessageResponse**](ScheduledMessageResponse.md)
 
 ### Authorization
 
