@@ -97,8 +97,6 @@ var defaultClient = Winsms.ApiClient.instance;
 // Configure API key authorization: APIKeyHeader
 var APIKeyHeader = defaultClient.authentications['APIKeyHeader'];
 APIKeyHeader.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//APIKeyHeader.apiKeyPrefix['AUTHORIZATION'] = "Token"
 
 var api = new Winsms.CreditsApi()
 
