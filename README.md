@@ -5,6 +5,9 @@
 
 For more information, please visit [http://support.winsms.co.za/](http://support.winsms.co.za/)
 
+> # DISCLAIMER:
+> The SDK is provided as a guideline to accessing the WinSMS API. The code is provided "as is" without any guarantees. Depending on your environment, the SDK may not work "out-of-the-box", therefore it is expected that you have sufficient technical knowledge and development skills to address any coding issues that may arise from using this SDK.
+
 ## Installation
 
 ### For [Node.js](https://nodejs.org/)
