@@ -1,7 +1,7 @@
 {
   "name": "winsms",
   "version": "1.0.0",
-  "description": "The full fucking description of the JavaScript Client",
+  "description": "WinSMS Javascript SDK",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {
